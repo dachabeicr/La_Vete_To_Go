@@ -2,60 +2,55 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login & Registro</title>
+    <title>Vete To Go - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Bootstrap CDN -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #FFD8A8; /* naranja pastel */
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-5">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🐾 Vete To Go</a>
+    <div>
+      <a class="btn btn-outline-light me-2" href="index.html">Login</a>
+      <a class="btn btn-warning" href="register.html">Registrarse</a>
+    </div>
+  </div>
+</nav>
 
-            <div class="card shadow p-4">
-                <h3 class="text-center mb-4">Iniciar Sesión</h3>
-                
-                <form>
-                    <div class="mb-3">
-                        <label>Email</label>
-                        <input type="email" class="form-control" placeholder="Correo">
-                    </div>
+<!-- LOGIN -->
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow p-4" style="width: 400px;">
+        
+        <h4 class="text-center mb-4">Iniciar Sesión</h4>
 
-                    <div class="mb-3">
-                        <label>Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Contraseña">
-                    </div>
-
-                    <button class="btn btn-primary w-100">Login</button>
-                </form>
-
-                <hr>
-
-                <h5 class="text-center mt-3">Registro</h5>
-
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Correo">
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="password" class="form-control" placeholder="Contraseña">
-                    </div>
-
-                    <button class="btn btn-success w-100">Registrarse</button>
-                </form>
-
+        <form>
+            <div class="mb-3">
+                <label>Correo electrónico</label>
+                <input type="email" class="form-control" required>
             </div>
 
-        </div>
+            <div class="mb-3">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" required>
+            </div>
+
+            <button class="btn btn-dark w-100">Ingresar</button>
+        </form>
+
     </div>
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
