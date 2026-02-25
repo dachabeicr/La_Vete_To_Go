@@ -9,14 +9,34 @@
 
     <style>
         body {
-            background-color: #FFD8A8;
+            background-color: #FFD8A8; /* naranja pastel */
+        }
+
+        /* Navbar personalizada */
+        .navbar {
+            background-color: #F4A261; /* naranja más fuerte */
+        }
+
+        .navbar .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar .btn-outline-light {
+            border-color: white;
+            color: white;
+        }
+
+        .navbar .btn-outline-light:hover {
+            background-color: white;
+            color: #F4A261;
         }
     </style>
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <a class="navbar-brand" href="index.html">🐾 Vete To Go</a>
     <div>
@@ -59,7 +79,10 @@
                 <input type="password" id="confirmPassword" class="form-control" required>
             </div>
 
-            <button class="btn btn-dark w-100">Registrarse</button>
+            <!-- Botón cambiado para que combine -->
+            <button class="btn w-100" style="background-color:#E76F51; color:white;">
+                Registrarse
+            </button>
         </form>
 
     </div>
